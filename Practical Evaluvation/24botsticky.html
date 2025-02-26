@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Footer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main p{
+    margin: 20px;
+    padding: 10px;
+    font-size: 2rem;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* Pushes the footer to the bottom */
+    padding: 20px;
+}
+
+footer {
+    font-size: 1.5rem;
+    padding: 15px;
+    position: sticky;
+    bottom: 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+</style>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sticky Footer Example</h1>
+        </header>
+        <main>
+            <p>Content goes here. The footer will always stay at the bottom.</p>
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sed ea deleniti aperiam culpa, distinctio, officiis inventore reiciendis nam dignissimos sit magnam laboriosam corrupti delectus quo rerum nihil numquam minima?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sed ea deleniti aperiam culpa, distinctio, officiis inventore reiciendis nam dignissimos sit magnam laboriosam corrupti delectus quo rerum nihil numquam minima?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sed ea deleniti aperiam culpa, distinctio, officiis inventore reiciendis nam dignissimos sit magnam laboriosam corrupti delectus quo rerum nihil numquam minima?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sed ea deleniti aperiam culpa, distinctio, officiis inventore reiciendis nam dignissimos sit magnam laboriosam corrupti delectus quo rerum nihil numquam minima?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sed ea deleniti aperiam culpa, distinctio, officiis inventore reiciendis nam dignissimos sit magnam laboriosam corrupti delectus quo rerum nihil numquam minima?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sed ea deleniti aperiam culpa, distinctio, officiis inventore reiciendis nam dignissimos sit magnam laboriosam corrupti delectus quo rerum nihil numquam minima?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sed ea deleniti aperiam culpa, distinctio, officiis inventore reiciendis nam dignissimos sit magnam laboriosam corrupti delectus quo rerum nihil numquam minima?</p>
+        </main>
+        <footer>
+            <p>© 2025 My Website</p>
+        </footer>
+    </div>
+</body>
+</html>

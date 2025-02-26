@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .sidebar {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .sidebar h2{
+            padding-bottom: 15px;
+        }
+
+        .main-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .post {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .post:last-child {
+            border-bottom: none;
+        }
+
+        .post h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .post p {
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>About the blog, categories, or any other links.</p>
+        </aside>
+        <main class="main-content">
+            <div class="post">
+                <h2>Blog Post Title 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis.</p>
+            </div>
+            <div class="post">
+                <h2>Blog Post Title 2</h2>
+                <p>Praesent tincidunt sed tellus ut rutrum. Phasellus viverra nulla ut metus.</p>
+            </div>
+            <div class="post">
+                <h2>Blog Post Title 3</h2>
+                <p>Donec mollis, nisi ac auctor facilisis, purus justo ornare turpis, nec laoreet.</p>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

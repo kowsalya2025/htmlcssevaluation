@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Theme Switcher</title>
+    <style>
+        /* Define light and dark themes using CSS variables */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333;
+        }
+
+        /* Dark theme */
+        [data-theme="dark"] {
+            --bg-color: #333;
+            --text-color: #ffffff;
+        }
+
+        /* Apply the theme */
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* Theme switcher buttons */
+        .theme-switcher {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .light-btn {
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        .dark-btn {
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body data-theme="light"> <!-- Default theme is light -->
+
+    <h1>CSS Theme Switcher</h1>
+    <p>Click the buttons below to switch themes.</p>
+
+    <div class="theme-switcher">
+        <button class="light-btn" onclick="document.body.setAttribute('data-theme', 'light')">Light Theme</button>
+        <button class="dark-btn" onclick="document.body.setAttribute('data-theme', 'dark')">Dark Theme</button>
+    </div>
+
+</body>
+</html>

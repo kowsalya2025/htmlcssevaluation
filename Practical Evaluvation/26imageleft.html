@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Float Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.float-left {
+    float: left;
+    margin-right: 15px;
+    width: 250px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 5px;
+}
+</style>
+<body>
+    <div class="container">
+        <img src="image/san2.webp" alt="Sample Image" class="float-left">
+        <p>
+            This is an example of an image floated to the left with text wrapping around it. The image remains on the left while the text flows naturally beside it. You can add more text here to see how it behaves with different amounts of content.
+        </p>
+    </div>
+</body>
+</html>

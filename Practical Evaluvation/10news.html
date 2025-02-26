@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local News</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+    border: 2px solid white;
+    padding: 0 5px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.logo span{
+    color: red;
+}
+h2{
+    color: red;
+}
+.tnews{
+    color: black;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  
+  display: flex;
+  
+}
+
+header nav ul li {
+  margin-left: 1rem;
+  
+}
+
+header nav ul li a {
+    font-size: 1.3rem;
+ color: rgb(232, 219, 219);
+  text-decoration: none;
+  padding: 10px;
+}
+header nav ul li a:hover{
+    color: rgb(244, 27, 27);
+    text-decoration: underline;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.news-category {
+  margin-bottom: 2rem;
+}
+
+.news-category h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+article {
+  margin-bottom: 1.5rem;
+}
+
+article h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+article .date {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+article .summary {
+  margin-top: 0.5rem;
+}
+
+aside.trending {
+  background: #f4f4f4;
+  padding: 2rem;
+  width: 50%;
+}
+
+aside.trending h2 {
+  margin-top: 0;
+  border-bottom: 2px solid black;
+}
+
+aside.trending ul {
+  list-style: none;
+  padding: 10px;
+  
+}
+
+aside.trending ul li {
+  margin-bottom: 0.5rem;
+}
+
+aside.trending ul li a {
+  color: #df1010be;
+  text-decoration: none;
+
+}
+.trending a:hover{
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Mobile-Friendly Design */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  header nav ul li {
+    margin: 0.5rem 0;
+  }
+}
+</style>
+<body>
+  <header>
+    <div class="logo">Local <span> News</span></div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Politics</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Technology</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="news-category">
+      <h2>Politics</h2>
+      <article>
+        <h3>New Policy Announced</h3>
+        <p class="date">October 10, 2023</p>
+        <p class="summary">The government has announced a new policy to improve public transportation.</p>
+      </article>
+      <article>
+        <h3>Election Updates</h3>
+        <p class="date">October 9, 2023</p>
+        <p class="summary">Candidates are gearing up for the upcoming elections.</p>
+      </article>
+    </section>
+
+    <section class="news-category">
+      <h2>Sports</h2>
+      <article>
+        <h3>Local Team Wins Championship</h3>
+        <p class="date">October 8, 2023</p>
+        <p class="summary">The local football team secured a thrilling victory in the finals.</p>
+      </article>
+      <article>
+        <h3>New Stadium Plans</h3>
+        <p class="date">October 7, 2023</p>
+        <p class="summary">Plans for a new stadium have been unveiled by the city council.</p>
+      </article>
+    </section>
+
+    <section class="news-category">
+      <h2>Technology</h2>
+      <article>
+        <h3>Tech Conference Highlights</h3>
+        <p class="date">October 6, 2023</p>
+        <p class="summary">The annual tech conference showcased innovations in AI and robotics.</p>
+      </article>
+      <article>
+        <h3>New Smartphone Launch</h3>
+        <p class="date">October 5, 2023</p>
+        <p class="summary">A leading company has launched its latest smartphone model.</p>
+      </article>
+    </section>
+
+    <aside class="trending">
+      <h2 class="tnews">Trending News</h2>
+      <ul>
+        <li><a href="#">Local Election Results</a></li>
+        <li><a href="#">Sports Team Controversy</a></li>
+        <li><a href="#">Tech Gadgets of the Year</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Local News. All rights reserved.</p>
+    <p>Designed by Kowsalya Developer</p>
+  </footer>
+</body>
+</html>

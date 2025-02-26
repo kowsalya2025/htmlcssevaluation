@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Element Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background: #3498db;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+main {
+    padding: 20px;
+    height: 150vh; /* Adding height to allow scrolling */
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+</style>
+<body>
+    <header class="sticky-header">
+        I'm a sticky header!
+    </header>
+    <main>
+        <p>Scroll down to see the effect.</p>
+        <div class="content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Quisque tincidunt orci et nisl dictum, in congue velit venenatis. 
+                Mauris ut tristique odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                <br><br>
+                Keep scrolling, and you'll see that the sticky header stays in place!
+            </p>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Shadow & Box Shadow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+
+        /* Text Shadow Effects */
+        .text-shadow {
+            font-size: 40px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: #3498db;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .glow {
+            font-size: 40px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-shadow: 0 0 20px rgba(13, 192, 22, 0.8);
+        }
+
+        /* Box Shadow Effects */
+        .box {
+            width: 200px;
+            height: 100px;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            background: white;
+            border-radius: 10px;
+        }
+
+        .shadow {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .deep-shadow {
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .inset-shadow {
+            box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Text Shadows -->
+    <h1 class="text-shadow">Text Shadow</h1>
+    <h1 class="glow">Glowing Text</h1>
+
+    <!-- Box Shadows -->
+    <div class="box shadow">Box Shadow</div>
+    <div class="box deep-shadow">Deep Shadow</div>
+    <div class="box inset-shadow">Inset Shadow</div>
+
+</body>
+</html>

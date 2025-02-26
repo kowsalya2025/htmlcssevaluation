@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Styles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .solid { border: 4px solid #3498db; }
+        .dashed { border: 4px dashed #e74c3c; }
+        .dotted { border: 4px dotted #2ecc71; }
+        .double { border: 6px double #f39c12; }
+        .groove { border: 6px groove #9b59b6; }
+        .ridge { border: 6px ridge #16a085; }
+    </style>
+</head>
+<body>
+
+    <div class="box solid">Solid Border</div>
+    <div class="box dashed">Dashed Border</div>
+    <div class="box dotted">Dotted Border</div>
+    <div class="box double">Double Border</div>
+    <div class="box groove">Groove Border</div>
+    <div class="box ridge">Ridge Border</div>
+
+</body>
+</html>

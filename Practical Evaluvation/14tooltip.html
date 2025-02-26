@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .tooltip-container {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 20px;
+        }
+
+        .tooltip-text {
+            visibility: hidden;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            border-radius: 5px;
+
+            /* Positioning */
+            position: absolute;
+            top:110%; 
+            left: 80%;
+            transform: translateX(-50%);
+
+            /* Tooltip arrow */
+            opacity: 0;
+            transition: opacity 0.3s;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .tooltip-container:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tooltip-container">
+        Hover over me
+        <div class="tooltip-text">This is a tooltip message!</div>
+    </div>
+
+</body>
+</html>

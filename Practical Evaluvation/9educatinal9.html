@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Courses</title>
+    <style>
+        *{
+            margin: 0; 
+            padding: 0;
+        }
+        body { font-family: cursive;
+             }
+        header, footer { 
+            background-color: #f79191; 
+            color: white; 
+            text-align: center;
+            padding: 10px; 
+            
+        }
+        h1{
+            text-shadow: 2px 2px 2px black;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            margin: 10px;
+            text-shadow: 2px 2px 2px black;
+        }
+        nav a {
+            padding: 10px;
+            color: white; 
+            text-decoration: none; 
+        }
+        nav a:hover{
+            color: black;
+            text-decoration: underline;
+            text-shadow: none;
+
+        }
+        .container {
+            padding: 20px; }
+        article { 
+            border-bottom: 1px solid #ccc;
+            
+            padding: 20px 0; }
+        section {
+            margin-top: 10px; }
+        section ul{
+            list-style: none;
+            padding: 10px;
+        }
+        aside { 
+            background-color: #f4f4f4; 
+            padding: 15px;
+            margin-top: 20px; }
+        #contact p{
+            text-shadow: 2px 2px 2px black;
+        }
+        #contact a{
+            color: rgb(224, 224, 15);
+            text-decoration: none;
+        }
+        #contact a:hover{
+            color: rgb(62, 3, 3);
+            text-decoration: underline;
+            text-shadow: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Educational Courses</h1>
+        <nav>
+            <a href="#course1">Course 1</a>
+            <a href="#course2">Course 2</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <article id="course1">
+            <h2>Web Development Basics</h2>
+            <p>Learn the fundamentals of HTML, CSS, and JavaScript.</p>
+            <p><strong>Instructor:</strong> Jane Doe</p>
+            <section>
+                <h3>Topics Covered:</h3>
+                <ul>
+                    <li>HTML Structure</li>
+                    <li>CSS Styling</li>
+                    <li>JavaScript Basics</li>
+                </ul>
+            </section>
+        </article>
+        
+        <article id="course2">
+            <h2>Python for Beginners</h2>
+            <p>An introduction to Python programming language.</p>
+            <p><strong>Instructor:</strong> John Smith</p>
+            <section>
+                <h3>Topics Covered:</h3>
+                <ul>
+                    <li>Python Syntax</li>
+                    <li>Data Types</li>
+                    <li>Control Flow</li>
+                </ul>
+            </section>
+        </article>
+        
+        <aside>
+            <h3>Student Testimonial</h3>
+            <p>"These courses helped me build a solid foundation in web development and programming! Highly recommend!" - Alex T.</p>
+        </aside>
+    </div>
+    
+    <footer id="contact">
+        <p>Contact us at: info@education.com</p>
+        <p>Follow us on social media: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a></p>
+    </footer>
+</body>
+</html>

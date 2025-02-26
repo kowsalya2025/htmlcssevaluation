@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+             margin: 20px; }
+        header, footer 
+        {
+            background-color: #f4f4f4;
+            padding: 10px; 
+            text-align: center; }
+        section {
+            margin: 20px 0; 
+
+        }
+        article {
+            border: 1px solid #ddd; 
+            padding: 10px; 
+            margin-bottom: 10px; 
+        border-radius: 20px;}
+        aside {
+            background: #eef;
+             padding: 20px; 
+             margin: 20px 0;
+             border-radius: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Job Portal</h1>
+        <p>Find your dream job here!</p>
+    </header>
+    
+    <aside>
+        <h2>Filter Jobs</h2>
+        <label for="category">Category:</label>
+        <select id="category">
+            <option>All</option>
+            <option>IT</option>
+            <option>Finance</option>
+            <option>Marketing</option>
+        </select>
+        <br>
+        <label for="location">Location:</label>
+        <select id="location">
+            <option>All</option>
+            <option>Chennai</option>
+            <option>Bangalore</option>
+            <option>Coimbatore</option>
+        </select>
+    </aside>
+    
+    <section>
+        <h2>Job Listings</h2>
+        
+        <article>
+            <h3>Software Engineer</h3>
+            <p><strong>Company:</strong> Tech Corp</p>
+            <p><strong>Location:</strong>Chennai</p>
+            <p><strong>Description:</strong> We are looking for a skilled software engineer with experience in web development.</p>
+        </article>
+        
+        <article>
+            <h3>Marketing Manager</h3>
+            <p><strong>Company:</strong> Market Solutions</p>
+            <p><strong>Location:</strong>Bangalore</p>
+            <p><strong>Description:</strong> Seeking a marketing expert to lead our campaigns and brand strategy.</p>
+        </article>
+        
+        <article>
+            <h3>Financial Analyst</h3>
+            <p><strong>Company:</strong> Finance Group</p>
+            <p><strong>Location:</strong> Coimbatore</p>
+            <p><strong>Description:</strong> Looking for a financial analyst with strong analytical skills and market knowledge.</p>
+        </article>
+    </section>
+    
+    <footer>
+        <p>Contact us at: support@jobportal.com</p>
+        <p>&copy; 2025 Job Portal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
