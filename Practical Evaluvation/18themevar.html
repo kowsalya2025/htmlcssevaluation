@@ -6,49 +6,23 @@
     <title>CSS Theme Switcher</title>
     <style>
         /* Define light and dark themes using CSS variables */
-        :root {
-            --bg-color: #ffffff;
-            --text-color: #333;
-        }
+    :root {
+    --bg-color: white;
+    --text-color: black;
+}
 
-        /* Dark theme */
-        [data-theme="dark"] {
-            --bg-color: #333;
-            --text-color: #ffffff;
-        }
+/* Apply variables to body */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-        /* Apply the theme */
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-
-        /* Theme switcher buttons */
-        .theme-switcher {
-            margin-top: 20px;
-        }
-
-        button {
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            margin: 5px;
-            font-size: 16px;
-            border-radius: 5px;
-        }
-
-        .light-btn {
-            background: #f4f4f4;
-            color: #333;
-        }
-
-        .dark-btn {
-            background: #333;
-            color: #fff;
-        }
+/* Change variables when dark theme is selected */
+:has(#dark:checked) {
+    --bg-color: black;
+    --text-color: white;
+}
     </style>
 </head>
 <body data-theme="light"> <!-- Default theme is light -->
@@ -57,9 +31,11 @@
     <p>Click the buttons below to switch themes.</p>
 
     <div class="theme-switcher">
-        <button class="light-btn" onclick="document.body.setAttribute('data-theme', 'light')">Light Theme</button>
-        <button class="dark-btn" onclick="document.body.setAttribute('data-theme', 'dark')">Dark Theme</button>
+        <input type="radio" id="light" name="theme" class="theme-toggle" checked>
+        <label for="light">Light Theme</label>
+    
+        <input type="radio" id="dark" name="theme" class="theme-toggle">
+        <label for="dark">Dark Theme</label>
     </div>
-
 </body>
 </html>
